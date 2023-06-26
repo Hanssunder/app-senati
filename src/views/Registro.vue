@@ -32,6 +32,21 @@ const formRegistro = reactive({
                                 <el-input v-model="formRegistro.apellidos" placeholder="Apellidos" required clearable></el-input>
                             </el-form-item>
                         </el-col>
+                        <el-col :span="24">
+                            <el-form-item label="Correo Electronico">
+                                <el-input v-model="formRegistro.correo" placeholder="Correo" required clearable></el-input>
+                            </el-form-item>
+                        </el-col>
+                        <el-col :span="12">
+                            <el-form-item label="Contraseña">
+                                <el-input v-model="formRegistro.contrasena" type="password" placeholder="Contraseña" required show-password></el-input>
+                            </el-form-item>
+                        </el-col>
+                        <el-col :span="12">
+                            <el-form-item label="Confirmar contraeña">
+                                <el-input v-model="formRegistro.confirmarContrasena" type="password" placeholder="Confirmar contraseña" required show-password></el-input>
+                            </el-form-item>
+                        </el-col>
                     </el-row>
 
                 </el-form>
